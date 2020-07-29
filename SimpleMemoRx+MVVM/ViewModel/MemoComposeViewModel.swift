@@ -24,7 +24,6 @@ class MemoComposeViewModel: CommonViewModel {
     
     init(title: String, content: String? = nil, sceneCoordinator: SceneCoordinatorType, storage: MemoStorageType, saveAction: Action<String, Void>? = nil, cancelAction: CocoaAction? = nil) {
         
-        
         self.content = content
         
         self.saveAction = Action<String, Void> { input in

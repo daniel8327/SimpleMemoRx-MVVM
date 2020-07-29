@@ -15,6 +15,7 @@ import Action
 class MemoDetailViewModel: CommonViewModel {
     
     let memo: Memo
+    var disposeBag = DisposeBag()
     
     private var formatter: DateFormatter = {
        let fmt = DateFormatter()
@@ -45,7 +46,7 @@ class MemoDetailViewModel: CommonViewModel {
                 .subscribe(onNext: { updated in
                     self.contents.onNext([updated.content, self.formatter.string(from: updated.insertDate)])
                 })
-                //.disposed(by: self.rx.disposeBag)
+                .disposed(by: self.disposeBag)
             
             return Observable.empty()
         }
@@ -62,7 +63,7 @@ class MemoDetailViewModel: CommonViewModel {
     }
     
     func makeDeleteAction() -> CocoaAction {
-        return Action { input in
+        return Action { _ in
             self.storage.delete(memo: self.memo)
             return self.sceneCoordinator.close(animated: true).asObservable().map { _ in }
         }

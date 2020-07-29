@@ -61,8 +61,8 @@ class MemoDetailViewController: UIViewController, ViewModelBindableType {
             .subscribe(onNext: { [weak self] _ in
                 guard let memo = self?.viewModel.memo.content else { return }
                 
-                let vc = UIActivityViewController(activityItems: [memo], applicationActivities: nil)
-                self?.present(vc, animated: true, completion: nil)
+                let viewController = UIActivityViewController(activityItems: [memo], applicationActivities: nil)
+                self?.present(viewController, animated: true, completion: nil)
             })
             .disposed(by: rx.disposeBag)
         
