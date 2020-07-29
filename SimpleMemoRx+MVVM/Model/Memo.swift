@@ -23,4 +23,10 @@ struct Memo: Equatable {
         self = original
         self.content = updateContent
     }
+    
+    init(dbMemo: DBMemo) {
+        self.content = dbMemo.content
+        self.insertDate = dbMemo.insertDate
+        self.identity = "\(dbMemo.insertDate.timeIntervalSinceReferenceDate)"
+    }
 }

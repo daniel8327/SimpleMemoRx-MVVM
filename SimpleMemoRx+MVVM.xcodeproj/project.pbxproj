@@ -32,6 +32,8 @@
 		64C0CFAD24D13FA00087BCB9 /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0CFAC24D13FA00087BCB9 /* SceneCoordinatorType.swift */; };
 		64C0CFAF24D140180087BCB9 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0CFAE24D140180087BCB9 /* SceneCoordinator.swift */; };
 		64C0CFB124D14B3A0087BCB9 /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0CFB024D14B3A0087BCB9 /* CommonViewModel.swift */; };
+		64C0CFB324D1AC440087BCB9 /* DBMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0CFB224D1AC440087BCB9 /* DBMemo.swift */; };
+		64C0CFC824D1B1050087BCB9 /* RealmCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0CFC724D1B1050087BCB9 /* RealmCenter.swift */; };
 		9D8086863AD3B6DC14CC5269 /* Pods_SimpleMemoRx_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25297CC6EB584F28307E6E48 /* Pods_SimpleMemoRx_MVVM.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +91,8 @@
 		64C0CFAC24D13FA00087BCB9 /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
 		64C0CFAE24D140180087BCB9 /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
 		64C0CFB024D14B3A0087BCB9 /* CommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
+		64C0CFB224D1AC440087BCB9 /* DBMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBMemo.swift; sourceTree = "<group>"; };
+		64C0CFC724D1B1050087BCB9 /* RealmCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmCenter.swift; sourceTree = "<group>"; };
 		DC3C842B1BFC8EDDD0B770F0 /* Pods_SimpleMemoRx_MVVMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleMemoRx_MVVMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8FD93B45DEEC6DA4D5703D /* Pods-SimpleMemoRx+MVVM-SimpleMemoRx+MVVMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMemoRx+MVVM-SimpleMemoRx+MVVMUITests.release.xcconfig"; path = "Target Support Files/Pods-SimpleMemoRx+MVVM-SimpleMemoRx+MVVMUITests/Pods-SimpleMemoRx+MVVM-SimpleMemoRx+MVVMUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -272,6 +276,8 @@
 		64C0CF8F24D12D8E0087BCB9 /* CoreDataStorage */ = {
 			isa = PBXGroup;
 			children = (
+				64C0CFC724D1B1050087BCB9 /* RealmCenter.swift */,
+				64C0CFB224D1AC440087BCB9 /* DBMemo.swift */,
 				64C0CF5924D127130087BCB9 /* SimpleMemoRx_MVVM.xcdatamodeld */,
 			);
 			path = CoreDataStorage;
@@ -536,6 +542,7 @@
 			files = (
 				64C0CF9124D12DA20087BCB9 /* MemoryStorage.swift in Sources */,
 				64C0CF9E24D1383B0087BCB9 /* MemoComposeViewModel.swift in Sources */,
+				64C0CFC824D1B1050087BCB9 /* RealmCenter.swift in Sources */,
 				64C0CFAF24D140180087BCB9 /* SceneCoordinator.swift in Sources */,
 				64C0CFAB24D13B8B0087BCB9 /* Scene.swift in Sources */,
 				64C0CF9624D137220087BCB9 /* MemoDetailViewController.swift in Sources */,
@@ -552,6 +559,7 @@
 				64C0CF9424D137030087BCB9 /* MemoListViewController.swift in Sources */,
 				64C0CF9824D1373F0087BCB9 /* MemoComposeViewController.swift in Sources */,
 				64C0CF8B24D12C250087BCB9 /* Memo.swift in Sources */,
+				64C0CFB324D1AC440087BCB9 /* DBMemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

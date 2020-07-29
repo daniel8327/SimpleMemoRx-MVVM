@@ -11,6 +11,7 @@ target 'SimpleMemoRx+MVVM' do
   pod 'NSObject+Rx'
   pod 'RxDataSources'
   pod 'RxCoreData'
+  pod 'RealmSwift'
 
   # Pods for SimpleMemoRx+MVVM
 

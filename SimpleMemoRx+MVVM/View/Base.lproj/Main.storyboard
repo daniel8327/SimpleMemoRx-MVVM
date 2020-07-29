@@ -85,7 +85,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sTk-8K-C3d">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="20" y="108" width="374" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -95,10 +95,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="sTk-8K-C3d" firstAttribute="leading" secondItem="Wsa-N6-mzl" secondAttribute="leading" id="6VR-un-jKo"/>
-                            <constraint firstItem="sTk-8K-C3d" firstAttribute="trailing" secondItem="Wsa-N6-mzl" secondAttribute="trailing" id="Jh7-cp-bGJ"/>
-                            <constraint firstItem="sTk-8K-C3d" firstAttribute="top" secondItem="9p7-E0-rcY" secondAttribute="top" id="SJv-Xp-owg"/>
-                            <constraint firstAttribute="bottom" secondItem="sTk-8K-C3d" secondAttribute="bottom" id="b8y-zO-id5"/>
+                            <constraint firstItem="sTk-8K-C3d" firstAttribute="leading" secondItem="Wsa-N6-mzl" secondAttribute="leading" constant="20" id="6VR-un-jKo"/>
+                            <constraint firstItem="sTk-8K-C3d" firstAttribute="top" secondItem="Wsa-N6-mzl" secondAttribute="top" constant="20" id="7fP-4Z-pz3"/>
+                            <constraint firstItem="sTk-8K-C3d" firstAttribute="bottom" secondItem="Wsa-N6-mzl" secondAttribute="bottom" constant="20" id="g2F-F8-jB8"/>
+                            <constraint firstItem="Wsa-N6-mzl" firstAttribute="trailing" secondItem="sTk-8K-C3d" secondAttribute="trailing" constant="20" id="twQ-1T-qtN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Wsa-N6-mzl"/>
                     </view>
@@ -226,7 +226,7 @@
                 <navigationController storyboardIdentifier="ComposeNav" automaticallyAdjustsScrollViewInsets="NO" id="7RR-71-pFt" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="7L6-o3-FIN">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="104.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
