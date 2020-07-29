@@ -1,0 +1,904 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		377B2F51C2BB5E618B55B23A /* Pods_SimpleMemoRx_MVVM_SimpleMemoRx_MVVMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42955141551667940BCEAC91 /* Pods_SimpleMemoRx_MVVM_SimpleMemoRx_MVVMUITests.framework */; };
+		5AB647F1EB23D3D5C4047801 /* Pods_SimpleMemoRx_MVVMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3C842B1BFC8EDDD0B770F0 /* Pods_SimpleMemoRx_MVVMTests.framework */; };
+		64C0CF5124D127130087BCB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0CF5024D127130087BCB9 /* AppDelegate.swift */; };
+		64C0CF5324D127130087BCB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0CF5224D127130087BCB9 /* SceneDelegate.swift */; };
+		64C0CF5824D127130087BCB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64C0CF5624D127130087BCB9 /* Main.storyboard */; };
+		64C0CF5B24D127130087BCB9 /* SimpleMemoRx_MVVM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 64C0CF5924D127130087BCB9 /* SimpleMemoRx_MVVM.xcdatamodeld */; };
+		64C0CF5D24D127190087BCB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64C0CF5C24D127190087BCB9 /* Assets.xcassets */; };
+		64C0CF6024D127190087BCB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64C0CF5E24D127190087BCB9 /* LaunchScreen.storyboard */; };
+		64C0CF6B24D1271A0087BCB9 /* SimpleMemoRx_MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0CF6A24D1271A0087BCB9 /* SimpleMemoRx_MVVMTests.swift */; };
+		64C0CF7624D1271A0087BCB9 /* SimpleMemoRx_MVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0CF7524D1271A0087BCB9 /* SimpleMemoRx_MVVMUITests.swift */; };
+		64C0CF8B24D12C250087BCB9 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0CF8A24D12C250087BCB9 /* Memo.swift */; };
+		64C0CF8D24D12CEB0087BCB9 /* MemoStorageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0CF8C24D12CEB0087BCB9 /* MemoStorageType.swift */; };
+		64C0CF9124D12DA20087BCB9 /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0CF9024D12DA20087BCB9 /* MemoryStorage.swift */; };
+		64C0CF9424D137030087BCB9 /* MemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0CF9324D137030087BCB9 /* MemoListViewController.swift */; };
+		64C0CF9624D137220087BCB9 /* MemoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0CF9524D137220087BCB9 /* MemoDetailViewController.swift */; };
+		64C0CF9824D1373F0087BCB9 /* MemoComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0CF9724D1373F0087BCB9 /* MemoComposeViewController.swift */; };
+		64C0CF9A24D138150087BCB9 /* MemoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0CF9924D138150087BCB9 /* MemoListViewModel.swift */; };
+		64C0CF9C24D138280087BCB9 /* MemoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0CF9B24D138280087BCB9 /* MemoDetailViewModel.swift */; };
+		64C0CF9E24D1383B0087BCB9 /* MemoComposeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0CF9D24D1383B0087BCB9 /* MemoComposeViewModel.swift */; };
+		64C0CFA024D1385F0087BCB9 /* ViewModelBindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0CF9F24D1385F0087BCB9 /* ViewModelBindableType.swift */; };
+		64C0CFA924D13B1A0087BCB9 /* TransitionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0CFA824D13B1A0087BCB9 /* TransitionModel.swift */; };
+		64C0CFAB24D13B8B0087BCB9 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0CFAA24D13B8B0087BCB9 /* Scene.swift */; };
+		64C0CFAD24D13FA00087BCB9 /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0CFAC24D13FA00087BCB9 /* SceneCoordinatorType.swift */; };
+		64C0CFAF24D140180087BCB9 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0CFAE24D140180087BCB9 /* SceneCoordinator.swift */; };
+		64C0CFB124D14B3A0087BCB9 /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0CFB024D14B3A0087BCB9 /* CommonViewModel.swift */; };
+		9D8086863AD3B6DC14CC5269 /* Pods_SimpleMemoRx_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25297CC6EB584F28307E6E48 /* Pods_SimpleMemoRx_MVVM.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64C0CF6724D1271A0087BCB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64C0CF4524D127130087BCB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64C0CF4C24D127130087BCB9;
+			remoteInfo = "SimpleMemoRx+MVVM";
+		};
+		64C0CF7224D1271A0087BCB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64C0CF4524D127130087BCB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64C0CF4C24D127130087BCB9;
+			remoteInfo = "SimpleMemoRx+MVVM";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		007DA164E12593513F81D9FE /* Pods-SimpleMemoRx+MVVM-SimpleMemoRx+MVVMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMemoRx+MVVM-SimpleMemoRx+MVVMUITests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleMemoRx+MVVM-SimpleMemoRx+MVVMUITests/Pods-SimpleMemoRx+MVVM-SimpleMemoRx+MVVMUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1FF1B76DEE5A2C19684DC087 /* Pods-SimpleMemoRx+MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMemoRx+MVVM.release.xcconfig"; path = "Target Support Files/Pods-SimpleMemoRx+MVVM/Pods-SimpleMemoRx+MVVM.release.xcconfig"; sourceTree = "<group>"; };
+		25297CC6EB584F28307E6E48 /* Pods_SimpleMemoRx_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleMemoRx_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E446966D45AF75365E4A82A /* Pods-SimpleMemoRx+MVVMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMemoRx+MVVMTests.release.xcconfig"; path = "Target Support Files/Pods-SimpleMemoRx+MVVMTests/Pods-SimpleMemoRx+MVVMTests.release.xcconfig"; sourceTree = "<group>"; };
+		42955141551667940BCEAC91 /* Pods_SimpleMemoRx_MVVM_SimpleMemoRx_MVVMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleMemoRx_MVVM_SimpleMemoRx_MVVMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		585F4E10DD9E235237E565EC /* Pods-SimpleMemoRx+MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMemoRx+MVVM.debug.xcconfig"; path = "Target Support Files/Pods-SimpleMemoRx+MVVM/Pods-SimpleMemoRx+MVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		6485DCE04BDC470B855F90E1 /* Pods-SimpleMemoRx+MVVMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMemoRx+MVVMTests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleMemoRx+MVVMTests/Pods-SimpleMemoRx+MVVMTests.debug.xcconfig"; sourceTree = "<group>"; };
+		64C0CF4D24D127130087BCB9 /* SimpleMemoRx+MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SimpleMemoRx+MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64C0CF5024D127130087BCB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		64C0CF5224D127130087BCB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		64C0CF5724D127130087BCB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		64C0CF5A24D127130087BCB9 /* SimpleMemoRx_MVVM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleMemoRx_MVVM.xcdatamodel; sourceTree = "<group>"; };
+		64C0CF5C24D127190087BCB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64C0CF5F24D127190087BCB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		64C0CF6124D127190087BCB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64C0CF6624D1271A0087BCB9 /* SimpleMemoRx+MVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SimpleMemoRx+MVVMTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64C0CF6A24D1271A0087BCB9 /* SimpleMemoRx_MVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMemoRx_MVVMTests.swift; sourceTree = "<group>"; };
+		64C0CF6C24D1271A0087BCB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64C0CF7124D1271A0087BCB9 /* SimpleMemoRx+MVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SimpleMemoRx+MVVMUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64C0CF7524D1271A0087BCB9 /* SimpleMemoRx_MVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMemoRx_MVVMUITests.swift; sourceTree = "<group>"; };
+		64C0CF7724D1271A0087BCB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64C0CF8A24D12C250087BCB9 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		64C0CF8C24D12CEB0087BCB9 /* MemoStorageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStorageType.swift; sourceTree = "<group>"; };
+		64C0CF9024D12DA20087BCB9 /* MemoryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryStorage.swift; sourceTree = "<group>"; };
+		64C0CF9324D137030087BCB9 /* MemoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewController.swift; sourceTree = "<group>"; };
+		64C0CF9524D137220087BCB9 /* MemoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailViewController.swift; sourceTree = "<group>"; };
+		64C0CF9724D1373F0087BCB9 /* MemoComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoComposeViewController.swift; sourceTree = "<group>"; };
+		64C0CF9924D138150087BCB9 /* MemoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewModel.swift; sourceTree = "<group>"; };
+		64C0CF9B24D138280087BCB9 /* MemoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailViewModel.swift; sourceTree = "<group>"; };
+		64C0CF9D24D1383B0087BCB9 /* MemoComposeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoComposeViewModel.swift; sourceTree = "<group>"; };
+		64C0CF9F24D1385F0087BCB9 /* ViewModelBindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBindableType.swift; sourceTree = "<group>"; };
+		64C0CFA824D13B1A0087BCB9 /* TransitionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionModel.swift; sourceTree = "<group>"; };
+		64C0CFAA24D13B8B0087BCB9 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		64C0CFAC24D13FA00087BCB9 /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
+		64C0CFAE24D140180087BCB9 /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
+		64C0CFB024D14B3A0087BCB9 /* CommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
+		DC3C842B1BFC8EDDD0B770F0 /* Pods_SimpleMemoRx_MVVMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleMemoRx_MVVMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC8FD93B45DEEC6DA4D5703D /* Pods-SimpleMemoRx+MVVM-SimpleMemoRx+MVVMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMemoRx+MVVM-SimpleMemoRx+MVVMUITests.release.xcconfig"; path = "Target Support Files/Pods-SimpleMemoRx+MVVM-SimpleMemoRx+MVVMUITests/Pods-SimpleMemoRx+MVVM-SimpleMemoRx+MVVMUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64C0CF4A24D127130087BCB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D8086863AD3B6DC14CC5269 /* Pods_SimpleMemoRx_MVVM.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64C0CF6324D1271A0087BCB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AB647F1EB23D3D5C4047801 /* Pods_SimpleMemoRx_MVVMTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64C0CF6E24D1271A0087BCB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				377B2F51C2BB5E618B55B23A /* Pods_SimpleMemoRx_MVVM_SimpleMemoRx_MVVMUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07040E14389EBEF658D63D24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25297CC6EB584F28307E6E48 /* Pods_SimpleMemoRx_MVVM.framework */,
+				42955141551667940BCEAC91 /* Pods_SimpleMemoRx_MVVM_SimpleMemoRx_MVVMUITests.framework */,
+				DC3C842B1BFC8EDDD0B770F0 /* Pods_SimpleMemoRx_MVVMTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		10BA47B84DA6B2FF54FA95F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				585F4E10DD9E235237E565EC /* Pods-SimpleMemoRx+MVVM.debug.xcconfig */,
+				1FF1B76DEE5A2C19684DC087 /* Pods-SimpleMemoRx+MVVM.release.xcconfig */,
+				007DA164E12593513F81D9FE /* Pods-SimpleMemoRx+MVVM-SimpleMemoRx+MVVMUITests.debug.xcconfig */,
+				EC8FD93B45DEEC6DA4D5703D /* Pods-SimpleMemoRx+MVVM-SimpleMemoRx+MVVMUITests.release.xcconfig */,
+				6485DCE04BDC470B855F90E1 /* Pods-SimpleMemoRx+MVVMTests.debug.xcconfig */,
+				3E446966D45AF75365E4A82A /* Pods-SimpleMemoRx+MVVMTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		64C0CF4424D127130087BCB9 = {
+			isa = PBXGroup;
+			children = (
+				64C0CF4F24D127130087BCB9 /* SimpleMemoRx+MVVM */,
+				64C0CF6924D1271A0087BCB9 /* SimpleMemoRx+MVVMTests */,
+				64C0CF7424D1271A0087BCB9 /* SimpleMemoRx+MVVMUITests */,
+				64C0CF4E24D127130087BCB9 /* Products */,
+				10BA47B84DA6B2FF54FA95F5 /* Pods */,
+				07040E14389EBEF658D63D24 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		64C0CF4E24D127130087BCB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64C0CF4D24D127130087BCB9 /* SimpleMemoRx+MVVM.app */,
+				64C0CF6624D1271A0087BCB9 /* SimpleMemoRx+MVVMTests.xctest */,
+				64C0CF7124D1271A0087BCB9 /* SimpleMemoRx+MVVMUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64C0CF4F24D127130087BCB9 /* SimpleMemoRx+MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				64C0CF8924D12C050087BCB9 /* Asset */,
+				64C0CF8524D12BC10087BCB9 /* Scene */,
+				64C0CF8424D12BC10087BCB9 /* Service */,
+				64C0CF8824D12BC20087BCB9 /* Model */,
+				64C0CF8724D12BC10087BCB9 /* View */,
+				64C0CF8624D12BC10087BCB9 /* ViewModel */,
+				64C0CF5024D127130087BCB9 /* AppDelegate.swift */,
+				64C0CF5224D127130087BCB9 /* SceneDelegate.swift */,
+				64C0CF5C24D127190087BCB9 /* Assets.xcassets */,
+				64C0CF6124D127190087BCB9 /* Info.plist */,
+			);
+			path = "SimpleMemoRx+MVVM";
+			sourceTree = "<group>";
+		};
+		64C0CF6924D1271A0087BCB9 /* SimpleMemoRx+MVVMTests */ = {
+			isa = PBXGroup;
+			children = (
+				64C0CF6A24D1271A0087BCB9 /* SimpleMemoRx_MVVMTests.swift */,
+				64C0CF6C24D1271A0087BCB9 /* Info.plist */,
+			);
+			path = "SimpleMemoRx+MVVMTests";
+			sourceTree = "<group>";
+		};
+		64C0CF7424D1271A0087BCB9 /* SimpleMemoRx+MVVMUITests */ = {
+			isa = PBXGroup;
+			children = (
+				64C0CF7524D1271A0087BCB9 /* SimpleMemoRx_MVVMUITests.swift */,
+				64C0CF7724D1271A0087BCB9 /* Info.plist */,
+			);
+			path = "SimpleMemoRx+MVVMUITests";
+			sourceTree = "<group>";
+		};
+		64C0CF8424D12BC10087BCB9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				64C0CF8F24D12D8E0087BCB9 /* CoreDataStorage */,
+				64C0CF8E24D12D840087BCB9 /* MemoStorage */,
+				64C0CF8C24D12CEB0087BCB9 /* MemoStorageType.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		64C0CF8524D12BC10087BCB9 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				64C0CFA824D13B1A0087BCB9 /* TransitionModel.swift */,
+				64C0CFAA24D13B8B0087BCB9 /* Scene.swift */,
+				64C0CFAC24D13FA00087BCB9 /* SceneCoordinatorType.swift */,
+				64C0CFAE24D140180087BCB9 /* SceneCoordinator.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		64C0CF8624D12BC10087BCB9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				64C0CF9924D138150087BCB9 /* MemoListViewModel.swift */,
+				64C0CF9B24D138280087BCB9 /* MemoDetailViewModel.swift */,
+				64C0CF9D24D1383B0087BCB9 /* MemoComposeViewModel.swift */,
+				64C0CFB024D14B3A0087BCB9 /* CommonViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		64C0CF8724D12BC10087BCB9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				64C0CF5624D127130087BCB9 /* Main.storyboard */,
+				64C0CF5E24D127190087BCB9 /* LaunchScreen.storyboard */,
+				64C0CF9324D137030087BCB9 /* MemoListViewController.swift */,
+				64C0CF9524D137220087BCB9 /* MemoDetailViewController.swift */,
+				64C0CF9724D1373F0087BCB9 /* MemoComposeViewController.swift */,
+				64C0CF9F24D1385F0087BCB9 /* ViewModelBindableType.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		64C0CF8824D12BC20087BCB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				64C0CF8A24D12C250087BCB9 /* Memo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		64C0CF8924D12C050087BCB9 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		64C0CF8E24D12D840087BCB9 /* MemoStorage */ = {
+			isa = PBXGroup;
+			children = (
+				64C0CF9024D12DA20087BCB9 /* MemoryStorage.swift */,
+			);
+			path = MemoStorage;
+			sourceTree = "<group>";
+		};
+		64C0CF8F24D12D8E0087BCB9 /* CoreDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				64C0CF5924D127130087BCB9 /* SimpleMemoRx_MVVM.xcdatamodeld */,
+			);
+			path = CoreDataStorage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64C0CF4C24D127130087BCB9 /* SimpleMemoRx+MVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64C0CF7A24D1271A0087BCB9 /* Build configuration list for PBXNativeTarget "SimpleMemoRx+MVVM" */;
+			buildPhases = (
+				BB5D365FEF9635F715D9C035 /* [CP] Check Pods Manifest.lock */,
+				64C0CF4924D127130087BCB9 /* Sources */,
+				64C0CF4A24D127130087BCB9 /* Frameworks */,
+				64C0CF4B24D127130087BCB9 /* Resources */,
+				7BE7F4EDA4CE6CA4B39186AD /* [CP] Embed Pods Frameworks */,
+				64C0CF9224D12F0F0087BCB9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SimpleMemoRx+MVVM";
+			productName = "SimpleMemoRx+MVVM";
+			productReference = 64C0CF4D24D127130087BCB9 /* SimpleMemoRx+MVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		64C0CF6524D1271A0087BCB9 /* SimpleMemoRx+MVVMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64C0CF7D24D1271A0087BCB9 /* Build configuration list for PBXNativeTarget "SimpleMemoRx+MVVMTests" */;
+			buildPhases = (
+				619DA4DA6519058F502D8CEE /* [CP] Check Pods Manifest.lock */,
+				64C0CF6224D1271A0087BCB9 /* Sources */,
+				64C0CF6324D1271A0087BCB9 /* Frameworks */,
+				64C0CF6424D1271A0087BCB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64C0CF6824D1271A0087BCB9 /* PBXTargetDependency */,
+			);
+			name = "SimpleMemoRx+MVVMTests";
+			productName = "SimpleMemoRx+MVVMTests";
+			productReference = 64C0CF6624D1271A0087BCB9 /* SimpleMemoRx+MVVMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		64C0CF7024D1271A0087BCB9 /* SimpleMemoRx+MVVMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64C0CF8024D1271A0087BCB9 /* Build configuration list for PBXNativeTarget "SimpleMemoRx+MVVMUITests" */;
+			buildPhases = (
+				15A427C136963FB2694D08EA /* [CP] Check Pods Manifest.lock */,
+				64C0CF6D24D1271A0087BCB9 /* Sources */,
+				64C0CF6E24D1271A0087BCB9 /* Frameworks */,
+				64C0CF6F24D1271A0087BCB9 /* Resources */,
+				F4CF86C1B1639094BC9734F9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64C0CF7324D1271A0087BCB9 /* PBXTargetDependency */,
+			);
+			name = "SimpleMemoRx+MVVMUITests";
+			productName = "SimpleMemoRx+MVVMUITests";
+			productReference = 64C0CF7124D1271A0087BCB9 /* SimpleMemoRx+MVVMUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64C0CF4524D127130087BCB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "장태현";
+				TargetAttributes = {
+					64C0CF4C24D127130087BCB9 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					64C0CF6524D1271A0087BCB9 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 64C0CF4C24D127130087BCB9;
+					};
+					64C0CF7024D1271A0087BCB9 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 64C0CF4C24D127130087BCB9;
+					};
+				};
+			};
+			buildConfigurationList = 64C0CF4824D127130087BCB9 /* Build configuration list for PBXProject "SimpleMemoRx+MVVM" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 64C0CF4424D127130087BCB9;
+			productRefGroup = 64C0CF4E24D127130087BCB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64C0CF4C24D127130087BCB9 /* SimpleMemoRx+MVVM */,
+				64C0CF6524D1271A0087BCB9 /* SimpleMemoRx+MVVMTests */,
+				64C0CF7024D1271A0087BCB9 /* SimpleMemoRx+MVVMUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64C0CF4B24D127130087BCB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64C0CF6024D127190087BCB9 /* LaunchScreen.storyboard in Resources */,
+				64C0CF5D24D127190087BCB9 /* Assets.xcassets in Resources */,
+				64C0CF5824D127130087BCB9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64C0CF6424D1271A0087BCB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64C0CF6F24D1271A0087BCB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15A427C136963FB2694D08EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleMemoRx+MVVM-SimpleMemoRx+MVVMUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		619DA4DA6519058F502D8CEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleMemoRx+MVVMTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64C0CF9224D12F0F0087BCB9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		7BE7F4EDA4CE6CA4B39186AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleMemoRx+MVVM/Pods-SimpleMemoRx+MVVM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleMemoRx+MVVM/Pods-SimpleMemoRx+MVVM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimpleMemoRx+MVVM/Pods-SimpleMemoRx+MVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB5D365FEF9635F715D9C035 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleMemoRx+MVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4CF86C1B1639094BC9734F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleMemoRx+MVVM-SimpleMemoRx+MVVMUITests/Pods-SimpleMemoRx+MVVM-SimpleMemoRx+MVVMUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleMemoRx+MVVM-SimpleMemoRx+MVVMUITests/Pods-SimpleMemoRx+MVVM-SimpleMemoRx+MVVMUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimpleMemoRx+MVVM-SimpleMemoRx+MVVMUITests/Pods-SimpleMemoRx+MVVM-SimpleMemoRx+MVVMUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64C0CF4924D127130087BCB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64C0CF9124D12DA20087BCB9 /* MemoryStorage.swift in Sources */,
+				64C0CF9E24D1383B0087BCB9 /* MemoComposeViewModel.swift in Sources */,
+				64C0CFAF24D140180087BCB9 /* SceneCoordinator.swift in Sources */,
+				64C0CFAB24D13B8B0087BCB9 /* Scene.swift in Sources */,
+				64C0CF9624D137220087BCB9 /* MemoDetailViewController.swift in Sources */,
+				64C0CFA024D1385F0087BCB9 /* ViewModelBindableType.swift in Sources */,
+				64C0CF5B24D127130087BCB9 /* SimpleMemoRx_MVVM.xcdatamodeld in Sources */,
+				64C0CF8D24D12CEB0087BCB9 /* MemoStorageType.swift in Sources */,
+				64C0CF5124D127130087BCB9 /* AppDelegate.swift in Sources */,
+				64C0CF5324D127130087BCB9 /* SceneDelegate.swift in Sources */,
+				64C0CFAD24D13FA00087BCB9 /* SceneCoordinatorType.swift in Sources */,
+				64C0CF9A24D138150087BCB9 /* MemoListViewModel.swift in Sources */,
+				64C0CF9C24D138280087BCB9 /* MemoDetailViewModel.swift in Sources */,
+				64C0CFB124D14B3A0087BCB9 /* CommonViewModel.swift in Sources */,
+				64C0CFA924D13B1A0087BCB9 /* TransitionModel.swift in Sources */,
+				64C0CF9424D137030087BCB9 /* MemoListViewController.swift in Sources */,
+				64C0CF9824D1373F0087BCB9 /* MemoComposeViewController.swift in Sources */,
+				64C0CF8B24D12C250087BCB9 /* Memo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64C0CF6224D1271A0087BCB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64C0CF6B24D1271A0087BCB9 /* SimpleMemoRx_MVVMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64C0CF6D24D1271A0087BCB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64C0CF7624D1271A0087BCB9 /* SimpleMemoRx_MVVMUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64C0CF6824D1271A0087BCB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64C0CF4C24D127130087BCB9 /* SimpleMemoRx+MVVM */;
+			targetProxy = 64C0CF6724D1271A0087BCB9 /* PBXContainerItemProxy */;
+		};
+		64C0CF7324D1271A0087BCB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64C0CF4C24D127130087BCB9 /* SimpleMemoRx+MVVM */;
+			targetProxy = 64C0CF7224D1271A0087BCB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		64C0CF5624D127130087BCB9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64C0CF5724D127130087BCB9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		64C0CF5E24D127190087BCB9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64C0CF5F24D127190087BCB9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		64C0CF7824D1271A0087BCB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		64C0CF7924D1271A0087BCB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64C0CF7B24D1271A0087BCB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 585F4E10DD9E235237E565EC /* Pods-SimpleMemoRx+MVVM.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G7S8646J3M;
+				INFOPLIST_FILE = "SimpleMemoRx+MVVM/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.daniel.SimpleMemoRx-MVVM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		64C0CF7C24D1271A0087BCB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FF1B76DEE5A2C19684DC087 /* Pods-SimpleMemoRx+MVVM.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G7S8646J3M;
+				INFOPLIST_FILE = "SimpleMemoRx+MVVM/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.daniel.SimpleMemoRx-MVVM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		64C0CF7E24D1271A0087BCB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6485DCE04BDC470B855F90E1 /* Pods-SimpleMemoRx+MVVMTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G67T3826C4;
+				INFOPLIST_FILE = "SimpleMemoRx+MVVMTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.daniel.SimpleMemoRx-MVVMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleMemoRx+MVVM.app/SimpleMemoRx+MVVM";
+			};
+			name = Debug;
+		};
+		64C0CF7F24D1271A0087BCB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E446966D45AF75365E4A82A /* Pods-SimpleMemoRx+MVVMTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G67T3826C4;
+				INFOPLIST_FILE = "SimpleMemoRx+MVVMTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.daniel.SimpleMemoRx-MVVMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleMemoRx+MVVM.app/SimpleMemoRx+MVVM";
+			};
+			name = Release;
+		};
+		64C0CF8124D1271A0087BCB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 007DA164E12593513F81D9FE /* Pods-SimpleMemoRx+MVVM-SimpleMemoRx+MVVMUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G67T3826C4;
+				INFOPLIST_FILE = "SimpleMemoRx+MVVMUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.daniel.SimpleMemoRx-MVVMUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SimpleMemoRx+MVVM";
+			};
+			name = Debug;
+		};
+		64C0CF8224D1271A0087BCB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC8FD93B45DEEC6DA4D5703D /* Pods-SimpleMemoRx+MVVM-SimpleMemoRx+MVVMUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G67T3826C4;
+				INFOPLIST_FILE = "SimpleMemoRx+MVVMUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.daniel.SimpleMemoRx-MVVMUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SimpleMemoRx+MVVM";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64C0CF4824D127130087BCB9 /* Build configuration list for PBXProject "SimpleMemoRx+MVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64C0CF7824D1271A0087BCB9 /* Debug */,
+				64C0CF7924D1271A0087BCB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64C0CF7A24D1271A0087BCB9 /* Build configuration list for PBXNativeTarget "SimpleMemoRx+MVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64C0CF7B24D1271A0087BCB9 /* Debug */,
+				64C0CF7C24D1271A0087BCB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64C0CF7D24D1271A0087BCB9 /* Build configuration list for PBXNativeTarget "SimpleMemoRx+MVVMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64C0CF7E24D1271A0087BCB9 /* Debug */,
+				64C0CF7F24D1271A0087BCB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64C0CF8024D1271A0087BCB9 /* Build configuration list for PBXNativeTarget "SimpleMemoRx+MVVMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64C0CF8124D1271A0087BCB9 /* Debug */,
+				64C0CF8224D1271A0087BCB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		64C0CF5924D127130087BCB9 /* SimpleMemoRx_MVVM.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				64C0CF5A24D127130087BCB9 /* SimpleMemoRx_MVVM.xcdatamodel */,
+			);
+			currentVersion = 64C0CF5A24D127130087BCB9 /* SimpleMemoRx_MVVM.xcdatamodel */;
+			path = SimpleMemoRx_MVVM.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 64C0CF4524D127130087BCB9 /* Project object */;
+}
