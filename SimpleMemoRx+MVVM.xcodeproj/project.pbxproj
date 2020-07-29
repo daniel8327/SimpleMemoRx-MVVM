@@ -173,7 +173,6 @@
 		64C0CF4F24D127130087BCB9 /* SimpleMemoRx+MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				64C0CF8924D12C050087BCB9 /* Asset */,
 				64C0CF8524D12BC10087BCB9 /* Scene */,
 				64C0CF8424D12BC10087BCB9 /* Service */,
 				64C0CF8824D12BC20087BCB9 /* Model */,
@@ -256,13 +255,6 @@
 				64C0CF8A24D12C250087BCB9 /* Memo.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		64C0CF8924D12C050087BCB9 /* Asset */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Asset;
 			sourceTree = "<group>";
 		};
 		64C0CF8E24D12D840087BCB9 /* MemoStorage */ = {
