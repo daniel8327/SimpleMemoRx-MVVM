@@ -11,13 +11,11 @@ import Foundation
 import RxSwift
 import RxCocoa
 import RealmSwift
+import TTGSnackbar
 
 class MemoryStorage: MemoStorageType {
     
     var disposeBag = DisposeBag()
-    // dummy data
-    /*private var list = [Memo(content: "Let's go Swift", insertDate: Date().addingTimeInterval(-20)),
-                        Memo(content: "Let's go Kotlin", insertDate: Date().addingTimeInterval(-10))]*/
    
     private lazy var store = BehaviorSubject<[Memo]>(value: [])
     
@@ -67,12 +65,31 @@ class MemoryStorage: MemoStorageType {
     func delete(memo: Memo) -> Observable<Memo> {
 
         let realm = RealmCenter.INSTANCE.getRealm()
-        
-        realm.beginWrite()
-        realm.delete(realm.objects(DBMemo.self).filter("insertDate = %@", memo.insertDate))
-        try? realm.commitWrite()
-        
-        fetch()
+        if let dbMemo = realm.objects(DBMemo.self).filter("insertDate = %@", memo.insertDate).first {
+
+            // 삭제 전 레지에 저장
+            if let encoded = try? JSONEncoder().encode(dbMemo) {
+                UserDefaults.standard.set(encoded, forKey: UNDO.DBMemo.rawValue)
+                UserDefaults.standard.synchronize()
+
+                // 아래에 스낵바 띄우기
+                let snackbar = TTGSnackbar(
+                    message: "",
+                    duration: .middle,
+                    actionText: "삭제 취소",
+                    actionBlock: { [unowned self] _ in
+                        self.undo()
+                    }
+                )
+                snackbar.show()
+            }
+            
+            realm.beginWrite()
+            realm.delete(dbMemo)
+            try? realm.commitWrite()
+            
+            fetch()
+        }
         
         return Observable.just(memo)
     }
@@ -119,4 +136,31 @@ class MemoryStorage: MemoStorageType {
             onComplete(.success(result))
         }
     }
+    
+    /// UserDefaults 에 담긴 값으로 삭제 취소 작업을 처리한다.
+    func undo() {
+        if let dbMemoData = UserDefaults.standard.data(forKey: UNDO.DBMemo.rawValue),
+            let dbMemo = try? JSONDecoder().decode(DBMemo.self, from: dbMemoData) {
+
+            let realm = RealmCenter.INSTANCE.getRealm()
+            
+            realm.beginWrite()
+            realm.add(dbMemo, update: .all)
+            
+            try? realm.commitWrite()
+            
+            fetch()
+
+            // 초기화
+            UserDefaults.standard.set(nil, forKey: UNDO.DBMemo.rawValue)
+            UserDefaults.standard.synchronize()
+            
+        } else {
+            print("처리할 데이터가 없습니다.")
+        }
+    }
+}
+
+enum UNDO: String {
+    case DBMemo
 }

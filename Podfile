@@ -12,6 +12,7 @@ target 'SimpleMemoRx+MVVM' do
   pod 'RxDataSources'
   pod 'RxCoreData'
   pod 'RealmSwift'
+  pod "TTGSnackbar"
 
   # Pods for SimpleMemoRx+MVVM
 

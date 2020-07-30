@@ -62,7 +62,7 @@
 		42955141551667940BCEAC91 /* Pods_SimpleMemoRx_MVVM_SimpleMemoRx_MVVMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleMemoRx_MVVM_SimpleMemoRx_MVVMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		585F4E10DD9E235237E565EC /* Pods-SimpleMemoRx+MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMemoRx+MVVM.debug.xcconfig"; path = "Target Support Files/Pods-SimpleMemoRx+MVVM/Pods-SimpleMemoRx+MVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		6485DCE04BDC470B855F90E1 /* Pods-SimpleMemoRx+MVVMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleMemoRx+MVVMTests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleMemoRx+MVVMTests/Pods-SimpleMemoRx+MVVMTests.debug.xcconfig"; sourceTree = "<group>"; };
-		64C0CF4D24D127130087BCB9 /* SimpleMemoRx+MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SimpleMemoRx+MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64C0CF4D24D127130087BCB9 /* 심플메모.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "심플메모.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64C0CF5024D127130087BCB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64C0CF5224D127130087BCB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		64C0CF5724D127130087BCB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -163,7 +163,7 @@
 		64C0CF4E24D127130087BCB9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				64C0CF4D24D127130087BCB9 /* SimpleMemoRx+MVVM.app */,
+				64C0CF4D24D127130087BCB9 /* 심플메모.app */,
 				64C0CF6624D1271A0087BCB9 /* SimpleMemoRx+MVVMTests.xctest */,
 				64C0CF7124D1271A0087BCB9 /* SimpleMemoRx+MVVMUITests.xctest */,
 			);
@@ -295,7 +295,7 @@
 			);
 			name = "SimpleMemoRx+MVVM";
 			productName = "SimpleMemoRx+MVVM";
-			productReference = 64C0CF4D24D127130087BCB9 /* SimpleMemoRx+MVVM.app */;
+			productReference = 64C0CF4D24D127130087BCB9 /* 심플메모.app */;
 			productType = "com.apple.product-type.application";
 		};
 		64C0CF6524D1271A0087BCB9 /* SimpleMemoRx+MVVMTests */ = {
@@ -733,7 +733,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.daniel.SimpleMemoRx-MVVM";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "심플메모";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -752,7 +752,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.daniel.SimpleMemoRx-MVVM";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "심플메모";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -22,4 +22,6 @@ protocol MemoStorageType {
     
     @discardableResult
     func delete(memo: Memo) -> Observable<Memo>
+    
+    func undo()
 }

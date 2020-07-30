@@ -10,7 +10,7 @@ import Foundation
 
 import RealmSwift
 
-class DBMemo: Object {
+class DBMemo: Object, Codable {
     
     @objc dynamic var identity: String
     @objc dynamic var content: String
@@ -50,9 +50,23 @@ class DBMemo: Object {
         super.init()
     }
      
-       init(memo: Memo) {
-           self.content = memo.content
-           self.insertDate = memo.insertDate
-           self.identity = "\(memo.insertDate.timeIntervalSinceReferenceDate)"
-       }
+    init(memo: Memo) {
+       self.content = memo.content
+       self.insertDate = memo.insertDate
+       self.identity = "\(memo.insertDate.timeIntervalSinceReferenceDate)"
+    }
+    
+    // MARK: Codable
+    private enum CodingKeys : String, CodingKey {
+        case identity
+        case content
+        case insertDate
+    }
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(identity,   forKey: .identity  )
+        try container.encode(content,    forKey: .content   )
+        try container.encode(insertDate, forKey: .insertDate)
+    }
 }
