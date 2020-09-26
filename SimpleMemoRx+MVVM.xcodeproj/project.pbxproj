@@ -11,7 +11,7 @@
 		5AB647F1EB23D3D5C4047801 /* Pods_SimpleMemoRx_MVVMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3C842B1BFC8EDDD0B770F0 /* Pods_SimpleMemoRx_MVVMTests.framework */; };
 		64C0CF5124D127130087BCB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0CF5024D127130087BCB9 /* AppDelegate.swift */; };
 		64C0CF5324D127130087BCB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0CF5224D127130087BCB9 /* SceneDelegate.swift */; };
-		64C0CF5824D127130087BCB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64C0CF5624D127130087BCB9 /* Main.storyboard */; };
+		64C0CF5824D127130087BCB9 /* SimpleMemoMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64C0CF5624D127130087BCB9 /* SimpleMemoMain.storyboard */; };
 		64C0CF5B24D127130087BCB9 /* SimpleMemoRx_MVVM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 64C0CF5924D127130087BCB9 /* SimpleMemoRx_MVVM.xcdatamodeld */; };
 		64C0CF5D24D127190087BCB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64C0CF5C24D127190087BCB9 /* Assets.xcassets */; };
 		64C0CF6024D127190087BCB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64C0CF5E24D127190087BCB9 /* LaunchScreen.storyboard */; };
@@ -65,7 +65,7 @@
 		64C0CF4D24D127130087BCB9 /* 심플메모.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "심플메모.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64C0CF5024D127130087BCB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64C0CF5224D127130087BCB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		64C0CF5724D127130087BCB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		64C0CF5724D127130087BCB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SimpleMemoMain.storyboard; sourceTree = "<group>"; };
 		64C0CF5A24D127130087BCB9 /* SimpleMemoRx_MVVM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleMemoRx_MVVM.xcdatamodel; sourceTree = "<group>"; };
 		64C0CF5C24D127190087BCB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64C0CF5F24D127190087BCB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -239,7 +239,7 @@
 		64C0CF8724D12BC10087BCB9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				64C0CF5624D127130087BCB9 /* Main.storyboard */,
+				64C0CF5624D127130087BCB9 /* SimpleMemoMain.storyboard */,
 				64C0CF5E24D127190087BCB9 /* LaunchScreen.storyboard */,
 				64C0CF9324D137030087BCB9 /* MemoListViewController.swift */,
 				64C0CF9524D137220087BCB9 /* MemoDetailViewController.swift */,
@@ -387,7 +387,7 @@
 			files = (
 				64C0CF6024D127190087BCB9 /* LaunchScreen.storyboard in Resources */,
 				64C0CF5D24D127190087BCB9 /* Assets.xcassets in Resources */,
-				64C0CF5824D127130087BCB9 /* Main.storyboard in Resources */,
+				64C0CF5824D127130087BCB9 /* SimpleMemoMain.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,12 +587,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		64C0CF5624D127130087BCB9 /* Main.storyboard */ = {
+		64C0CF5624D127130087BCB9 /* SimpleMemoMain.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				64C0CF5724D127130087BCB9 /* Base */,
 			);
-			name = Main.storyboard;
+			name = SimpleMemoMain.storyboard;
 			sourceTree = "<group>";
 		};
 		64C0CF5E24D127190087BCB9 /* LaunchScreen.storyboard */ = {
