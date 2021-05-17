@@ -1,0 +1,6 @@
+framework module Pods_SimpleMemoRx_MVVMTests {
+  umbrella header "Pods-SimpleMemoRx+MVVMTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
